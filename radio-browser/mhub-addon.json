@@ -1,0 +1,85 @@
+{
+  "id": "radio-browser",
+  "name": "Radio Browser",
+  "specVersion": 2,
+  "version": "2.0.0",
+  "description": "Zehntausende Radiosender weltweit. Daten von radio-browser.info (community, kostenlos, ohne API-Key).",
+  "icon": "https://www.radio-browser.info/favicon.ico",
+  "resources": ["catalog", "item"],
+  "types": ["live"],
+  "catalogs": [
+    {
+      "id": "radio",
+      "name": "Radio",
+      "type": "live",
+      "options": { "shape": "square", "displayName": true },
+      "features": {
+        "search": true,
+        "sort": [
+          { "id": "votes", "name": "Beliebt" },
+          { "id": "clicks", "name": "Trending" },
+          { "id": "name", "name": "Name A–Z" }
+        ],
+        "filter": [
+          {
+            "id": "country",
+            "name": "Land",
+            "multiselect": false,
+            "values": [
+              { "id": "CH", "name": "Schweiz" },
+              { "id": "DE", "name": "Deutschland" },
+              { "id": "AT", "name": "Österreich" },
+              { "id": "FR", "name": "France" },
+              { "id": "IT", "name": "Italia" },
+              { "id": "GB", "name": "United Kingdom" },
+              { "id": "US", "name": "United States" },
+              { "id": "ES", "name": "España" },
+              { "id": "NL", "name": "Nederland" },
+              { "id": "PT", "name": "Portugal" },
+              { "id": "PL", "name": "Polska" },
+              { "id": "RU", "name": "Россия" }
+            ]
+          },
+          {
+            "id": "genre",
+            "name": "Genre",
+            "multiselect": true,
+            "values": [
+              { "id": "pop", "name": "pop" },
+              { "id": "rock", "name": "rock" },
+              { "id": "jazz", "name": "jazz" },
+              { "id": "classical", "name": "classical" },
+              { "id": "news", "name": "news" },
+              { "id": "dance", "name": "dance" },
+              { "id": "electronic", "name": "electronic" },
+              { "id": "hip hop", "name": "hip hop" },
+              { "id": "country", "name": "country" },
+              { "id": "oldies", "name": "oldies" },
+              { "id": "metal", "name": "metal" },
+              { "id": "reggae", "name": "reggae" },
+              { "id": "blues", "name": "blues" },
+              { "id": "folk", "name": "folk" },
+              { "id": "chillout", "name": "chillout" },
+              { "id": "80s", "name": "80s" },
+              { "id": "90s", "name": "90s" },
+              { "id": "talk", "name": "talk" },
+              { "id": "sports", "name": "sports" }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "dashboard": [
+    { "name": "Top", "catalog": "radio", "sort": "votes" },
+    { "name": "Trending", "catalog": "radio", "sort": "clicks" },
+    { "name": "Schweiz", "catalog": "radio", "sort": "votes", "filter": { "country": "CH" } },
+    { "name": "Deutschland", "catalog": "radio", "sort": "votes", "filter": { "country": "DE" } },
+    { "name": "Jazz", "catalog": "radio", "sort": "votes", "filter": { "genre": "jazz" } },
+    { "name": "Classical", "catalog": "radio", "sort": "votes", "filter": { "genre": "classical" } }
+  ],
+  "cache": {
+    "catalog": 3600,
+    "item": 3600
+  }
+}
