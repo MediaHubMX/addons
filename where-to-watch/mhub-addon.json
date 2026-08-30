@@ -1,0 +1,11 @@
+{
+  "id": "where-to-watch",
+  "name": "Where To Watch",
+  "specVersion": 2,
+  "version": "2.0.0",
+  "description": "What a title is, where it streams in your region, and what is on live right now",
+  "icon": "https://www.mhub.mx/assets/images/favicon.png",
+  "resources": [],
+  "types": [],
+  "requires": ["../tmdb", "../watch-providers", "../iptv-org"]
+}
