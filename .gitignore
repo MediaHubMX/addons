@@ -1,0 +1,4 @@
+node_modules/
+# Addons served from this deployment but kept in another repository. Laid in
+# here at build time, never committed.
+private/

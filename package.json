@@ -1,0 +1,16 @@
+{
+  "name": "mhub-addons",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The mHub v2 addons, served in both protocols",
+  "scripts": {
+    "start": "node serve.mjs",
+    "dev": "node --watch serve.mjs",
+    "test": "node --test test.mjs"
+  },
+  "dependencies": {
+    "redis": "^6.2.1"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,2 @@
+{ "id": "static-addon", "name": "Static", "specVersion": 2, "resources": ["catalog"],
+  "types": ["video"], "catalogs": [{ "id": "all", "name": "All", "type": "video" }] }
