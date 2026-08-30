@@ -1,0 +1,11 @@
+{
+  "id": "radio-and-podcasts",
+  "name": "Radio & Podcasts",
+  "specVersion": 2,
+  "version": "1.0.0",
+  "description": "Everything to listen to: internet radio, the community station directory, podcasts and public domain audiobooks",
+  "icon": "https://www.mhub.mx/assets/images/favicon.png",
+  "resources": [],
+  "types": [],
+  "requires": ["../somafm", "../radio-browser", "../podcasts", "../librivox"]
+}
