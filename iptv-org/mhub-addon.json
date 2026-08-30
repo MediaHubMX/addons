@@ -1,0 +1,39 @@
+{
+  "id": "iptv-org",
+  "name": "IPTV-ORG (github.io)",
+  "specVersion": 2,
+  "version": "2.0.0",
+  "description": "Public international IPTV channels",
+  "resources": ["catalog", "item"],
+  "types": ["live"],
+  "catalogs": [
+    {
+      "id": "channels",
+      "name": "IPTV-ORG",
+      "type": "live",
+      "options": { "shape": "square", "displayName": true },
+      "features": {
+        "search": true,
+        "sort": [
+          { "id": "default", "name": "Default" },
+          { "id": "name", "name": "Name" }
+        ]
+      }
+    }
+  ],
+  "dashboard": [
+    { "name": "All Channels", "catalog": "channels" },
+    { "name": "News", "catalog": "channels", "filter": { "group": "News" } },
+    { "name": "Sports", "catalog": "channels", "filter": { "group": "Sports" } },
+    { "name": "Movies", "catalog": "channels", "filter": { "group": "Movies" } },
+    { "name": "Music", "catalog": "channels", "filter": { "group": "Music" } },
+    { "name": "Documentary", "catalog": "channels", "filter": { "group": "Documentary" } },
+    { "name": "Kids", "catalog": "channels", "filter": { "group": "Kids" } },
+    { "name": "Entertainment", "catalog": "channels", "filter": { "group": "Entertainment" } },
+    { "name": "Science", "catalog": "channels", "filter": { "group": "Science" } }
+  ],
+  "cache": {
+    "catalog": 300,
+    "item": 300
+  }
+}
