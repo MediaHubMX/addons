@@ -1,0 +1,71 @@
+{
+  "id": "nasa",
+  "name": "NASA Videos",
+  "specVersion": 2,
+  "version": "2.0.0",
+  "description": "NASA Image & Video Library. Raketenstarts, Missionen, Weltraum-Dokus. Public Domain, ohne Geo-Sperre.",
+  "icon": "https://www.nasa.gov/apple-touch-icon.png",
+  "resources": ["catalog", "item", "source", "subtitle"],
+  "types": ["video"],
+  "idPrefixes": ["nasa"],
+  "catalogs": [
+    {
+      "id": "videos",
+      "name": "NASA Videos",
+      "type": "video",
+      "options": { "shape": "landscape", "displayName": true },
+      "features": {
+        "search": true,
+        "filter": [
+          {
+            "id": "topic",
+            "name": "Thema",
+            "multiselect": false,
+            "values": [
+              { "id": "mars", "name": "Mars" },
+              { "id": "moon", "name": "Mond" },
+              { "id": "apollo", "name": "Apollo" },
+              { "id": "artemis", "name": "Artemis" },
+              { "id": "earth", "name": "Erde" },
+              { "id": "iss", "name": "ISS" },
+              { "id": "hubble", "name": "Hubble" },
+              { "id": "james webb", "name": "James Webb" },
+              { "id": "launch", "name": "Raketenstarts" }
+            ]
+          },
+          {
+            "id": "center",
+            "name": "NASA Center",
+            "multiselect": false,
+            "values": [
+              { "id": "JPL", "name": "Jet Propulsion Laboratory" },
+              { "id": "JSC", "name": "Johnson Space Center" },
+              { "id": "GSFC", "name": "Goddard Space Flight Center" },
+              { "id": "KSC", "name": "Kennedy Space Center" },
+              { "id": "MSFC", "name": "Marshall Space Flight Center" },
+              { "id": "ARC", "name": "Ames Research Center" },
+              { "id": "HQ", "name": "NASA Headquarters" }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "dashboard": [
+    { "name": "Highlights", "catalog": "videos" },
+    { "name": "Mars", "catalog": "videos", "filter": { "topic": "mars" } },
+    { "name": "Mond", "catalog": "videos", "filter": { "topic": "moon" } },
+    { "name": "Apollo", "catalog": "videos", "filter": { "topic": "apollo" } },
+    { "name": "Artemis", "catalog": "videos", "filter": { "topic": "artemis" } },
+    { "name": "Erde", "catalog": "videos", "filter": { "topic": "earth" } },
+    { "name": "ISS", "catalog": "videos", "filter": { "topic": "iss" } },
+    { "name": "Hubble", "catalog": "videos", "filter": { "topic": "hubble" } },
+    { "name": "James Webb", "catalog": "videos", "filter": { "topic": "james webb" } }
+  ],
+  "cache": {
+    "catalog": 21600,
+    "item": 86400,
+    "source": 86400,
+    "subtitle": 86400
+  }
+}
