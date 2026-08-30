@@ -1,0 +1,11 @@
+{
+  "id": "public-domain",
+  "name": "Free & Public Domain",
+  "specVersion": 2,
+  "version": "1.0.0",
+  "description": "Nothing licensed, nothing geo blocked: the Internet Archive, LibriVox, NASA and PeerTube",
+  "icon": "https://www.mhub.mx/assets/images/favicon.png",
+  "resources": [],
+  "types": [],
+  "requires": ["../internet-archive", "../librivox", "../nasa", "../peertube"]
+}
