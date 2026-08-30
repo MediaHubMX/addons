@@ -1,0 +1,11 @@
+{
+  "id": "mediathek-bundle",
+  "name": "German Mediatheken",
+  "specVersion": 2,
+  "version": "2.0.0",
+  "description": "The German-language public broadcasters in one go: ARD, ARTE, funk, KiKA, DW and the ARD Audiothek",
+  "icon": "https://www.mhub.mx/assets/images/favicon.png",
+  "resources": [],
+  "types": [],
+  "requires": ["../ard-mediathek", "../ard-audiothek", "../arte", "../funk", "../kika", "../dw"]
+}
